@@ -3,3 +3,6 @@
 # 暂时不提交
 rsync
 supervisord
+
+
+*.log
