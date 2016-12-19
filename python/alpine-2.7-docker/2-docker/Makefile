@@ -1,6 +1,6 @@
 all: push
 
-TAG = py2.7.10
+TAG = py2.7.10docker
 PREFIX = index.boxlinker.com
 IMAGE_NAME = boxlinker/alpine
 
@@ -13,3 +13,5 @@ push: container
 clean:
 	docker rmi -f $(PREFIX):$(TAG) || true
 
+
+#docker build --no-cache -t python:2.7.10-flask .
