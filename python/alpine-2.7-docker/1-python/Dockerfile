@@ -99,4 +99,3 @@ COPY supervisord.conf /etc/supervisord.conf
 CMD ["supervisord", "-c", "/etc/supervisord.conf"]
 #ENTRYPOINT ["supervisord", "-c", "/etc/supervisord.conf"]
 #CMD ["python2"]
-#CMD ["python2"]

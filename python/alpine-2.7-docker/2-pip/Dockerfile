@@ -3,9 +3,7 @@ FROM alpine:python_2.7.10
 
 ############  安装 python 依赖包  ############
 
-RUN pip install flask flask_restful flask-cors
-
-RUN pip install sqlalchemy
+RUN pip install flask flask_restful flask-cors && RUN pip install sqlalchemy
 
 RUN apk --update add gnupg openssl tar xz
 
@@ -26,11 +24,7 @@ RUN apk --update add tk-dev
 RUN apk --update add zlib-dev
 RUN apk --update add unzip
 
-RUN pip install jwt
-RUN pip install RSA 
-RUN pip install PyJWT 
-RUN pip install requests 
-RUN pip install pika
+RUN pip install jwt  RSA PyJWT requests pika
 
 RUN apk --update add libffi-dev
 
@@ -52,14 +46,7 @@ RUN apk --update add python-dev
 RUN apk --update add mysql-bench
 
 
-
 RUN apk --update add libjpeg-dev
-
-#RUN pip install MySQL-python
-
-#RUN cd MySQL-python-1.2.5 && python setup.py install
-#RUN cd / && rm -rf MySQL-python-1.2.5*
-
 
 ############  安装 python 依赖包  ############
 
