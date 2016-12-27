@@ -6,3 +6,6 @@ supervisord
 
 
 *.log
+*.car
+*.key
+*.pem
